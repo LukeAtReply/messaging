@@ -8,24 +8,25 @@
 <body>
     <h1>Messaging Test</h1>
     <!-- Embedded Messaging Script -->
-    <script type="text/javascript">
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-                embeddedservice_bootstrap.init(
-                    '00D3M0000008n9B',
-                    'HME_UK_First_Line_Support',
-                    'https://hondamotoreurope--uat.sandbox.my.site.com/ESWHMEUKFirstLineSupp1692103053683',
-                    {
-                        scrt2URL: 'https://hondamotoreurope--uat.sandbox.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type="text/javascript" src="https://hondamotoreurope--uat.sandbox.my.site.com/ESWHMEUKFirstLineSupp1692103053683/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
+			embeddedservice_bootstrap.init(
+				'00D3M0000008n9B',
+				'HME_UK_First_Line_Support',
+				'https://hondamotoreurope--uat.sandbox.my.site.com/ESWHMEUKFirstLineSupp1692103053683',
+				{
+					scrt2URL: 'https://hondamotoreurope--uat.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://hondamotoreurope--uat.sandbox.my.site.com/ESWHMEUKFirstLineSupp1692103053683/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
 </html>
